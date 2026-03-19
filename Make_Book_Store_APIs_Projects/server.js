@@ -4,7 +4,7 @@ const db=require("./Config/db")
 const app=express()
 
 app.use(express.json())
-app.use("/",Bookrouter)
+app.use(Bookrouter)
 
 
 app.listen(7505,()=>{
